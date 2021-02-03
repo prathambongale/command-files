@@ -4,3 +4,17 @@ sudo service docker status
 Start Docker in Ubuntu:
 sudo service docker start
 
+Stoping Docker in Ubuntu:
+sudo service docker stop
+
+To show all running containers:
+sudo docker ps -all
+
+To show docker images:
+sudo docker images
+
+Stopping container:
+sudo docker stop <container_ID>
+
+Remove container:
+sudo docker rm <container_ID>
