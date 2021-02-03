@@ -37,3 +37,5 @@ Switch branch:
 git switch <branch_name>
 
 
+To create branch on remote:
+git push --set-upstream origin <branch_name>
