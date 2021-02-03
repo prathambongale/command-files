@@ -1,14 +1,14 @@
 Steps to create repo using command line:
 git init 																				
 git add README.md													// adding readme file
-git commit -m "first commit"										
+git commit -m "<first commit>"										
 git branch -M main													// making first commit
-git remote add origin https://github.com/gituser/project_name.git	// Setting up git origin
-git push -u origin main											// pushing to master branch
+git remote add origin <https://github.com/gituser/project_name.git>	// Setting up git origin
+git push -u origin main												// pushing to master branch
 
 
 Step to push existing repo from command line:
-git remote add origin https://github.com/prathambongale/command-files.git
+git remote add origin <https://github.com/prathambongale/command-files.git>
 git branch -M main
 git push -u origin main
 
@@ -22,4 +22,18 @@ git status
 
 
 Committing:
-git commit -m "First commit"
+git commit -m "<First commit>"
+
+
+Creates new Branch
+git branch <branch_name>
+
+
+List of branch on local:
+git branch
+
+
+Switch branch:
+git switch <branch_name>
+
+
