@@ -1,0 +1,6 @@
+Check if docker status:
+sudo service docker status
+
+Start Docker in Ubuntu:
+sudo service docker start
+

@@ -1,0 +1,8 @@
+remove file:
+rm /path/to/directory
+
+remove Directory:
+rmdir /path/to/directory
+
+Removed folder with all its folders:
+rm -rf /path/to/directory
