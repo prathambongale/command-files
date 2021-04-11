@@ -1,0 +1,4 @@
+mongod --dbpath /home/prathambongale/mongodb-volume/data/db
+
+mongo --host 127.0.0.1 --port 27017
+
