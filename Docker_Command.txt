@@ -18,3 +18,9 @@ sudo docker stop <container_ID>
 
 Remove container:
 sudo docker rm <container_ID>
+
+Removes Images: // make sure all the containers are stopped and removed before removing image
+docker rmi <image_run>
+
+
+docker run -p 27017:27017 --name mongo-one -v /home/prathambongale/mongodb-volume/data/db:/data/db -d mongo:bionic

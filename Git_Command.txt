@@ -39,3 +39,7 @@ git switch <branch_name>
 
 To create branch on remote:
 git push --set-upstream origin <branch_name>
+
+
+To merge changes in remote and local:
+git pull origin main --allow-unrelated-histories

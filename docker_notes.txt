@@ -1,0 +1,45 @@
+OpenShift notes:
+
+-> It is RedHat PaaS
+-> Offerings (flavours)- 
+	1. OpenShift origin - OpenShift application container platform
+	2. OpenShift online - Public application development hosting service
+	3. OpenShift dedicated - managed private cluster on AWS/Google Clouds
+	4. Openshift Enterprice - On-premise private PaaS
+-> OpenShift origin is based on top of Docker containers and the Kubernetes cluster manager, with added developer and operational centric tools that enable rapid application development, deployment and lifecycle management.
+
+
+Docker:
+-> run each service with its own dependencies in seprate containers e.g. node.js can have its seprate container with its libs and dependencies
+-> Containers: completly isolated env. which means then can have their own processes or services, their own networking interfaces, their own mounts  but all containers share same OS kernel.
+-> public docker registry - dockerhub
+-> Docker images: are package or templete or Plan just like VM templete use to create one or more container 
+-> Containers: are running instance of images that are isolated and have their own env. and set of processes 
+-> basic command 
+		docker ps = docker container ls
+		docker ps -a -> to list all docker containers
+		docker container ls -all -> to list all running docker containers
+		docker rm name_of_container -> to remove docker images
+		docker rmi image_name -> before deleting the image make sure you have deleted al the containers from the image
+		docker run ubuntu -> to download the image 
+		docker pull ubuntu -> to only pull the image
+		docker run ubuntu sleep 1000 -> the container goes to sleep for 1000 seconds
+		docker run -d container_name -> here d will run the container in background 
+		docker stop name/ID of container - > to stop the container 
+		docker attach container_name
+		docker inspect container_id
+		docker run ubuntu:artful cat /etc/hosts -> to print contents of /etc/hosts file while running ubuntu
+		dokcer run -p <Host Port>:<Container Port> <Docker image_name> -> docker port mapping
+		docker run -p 80:8080 -v /opt/jenkins_data:/var/jenkins_home jenkins -> local dir making to jenkins home inside the dokcer container
+		
+		Containerizing simple web appplication:
+			Docker file:
+				FROM ubuntu:17.04
+				RUN apt-get update
+				RUN apt-get install -y python python-pip
+				RUN pip install flask
+				COPY /home/dev_user/source-code/app.py /opt/app.py
+				ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0
+		
+		
+			
