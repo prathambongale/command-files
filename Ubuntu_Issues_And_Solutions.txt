@@ -1,0 +1,21 @@
+Use \\wsl$ in intelliJ to get into WSL Ubuntu
+
+
+Ubuntu Commands and solutions:
+
+Error:
+ModuleNotFoundError: No module named 'apt_pkg'
+Solution:
+sudo apt-get remove python3-apt
+sudo apt-get install python3-apt
+
+\\wsl$\Ubuntu
+
+maven repo
+/home/prathambongale/.m2/repository
+/usr/share/maven/conf/settings.xml
+
+Java
+/usr/lib/jvm/java-11-openjdk-amd64
+
+\\wsl$\Ubuntu\usr\lib\jvm\java-11-openjdk-amd64

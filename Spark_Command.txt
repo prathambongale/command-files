@@ -1,0 +1,9 @@
+To run spark job on Linux:
+
+spark-submit   --class "org.practise.App"   --master local[4] target/scala-test-1.0-SNAPSHOT.jar
+
+
+With Parameters/argument:
+
+spark-submit   --class "org.practise.App"   --master local[4] target/scala-test-1.0-SNAPSHOT.jar [1,2,3,4,5]
+

@@ -6,3 +6,13 @@ rmdir /path/to/directory
 
 Removed folder with all its folders:
 rm -rf /path/to/directory
+
+Starting SSH: (ref link: https://linuxhint.com/fix_connection_refused_ubuntu/)
+sudo service ssh start
+
+Checking SSH status:
+sudo service ssh status
+
+
+To check what process is running on the give port:
+sudo ss -tulpn | grep :[port_number]

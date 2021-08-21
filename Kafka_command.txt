@@ -1,0 +1,5 @@
+Start Zookeeper in one command line: 
+zookeeper-server-start.bat config\zookeeper.properties
+
+tart Kafka in another command line: 
+kafka-server-start.bat config\server.properties

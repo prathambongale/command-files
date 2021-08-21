@@ -13,6 +13,15 @@ git branch -M main
 git push -u origin main
 
 
+Setting Git Username:
+git config --global user.name "Mona Lisa"
+
+Confirming Git username:
+git config --global user.name
+
+Setting Git email:
+git config --global user.email "MY_NAME@example.com"
+
 Adding all file:
 git add .
 
@@ -37,9 +46,20 @@ Switch branch:
 git switch <branch_name>
 
 
+Deleting local branch:
+git branch -d <branch_name>
+
 To create branch on remote:
 git push --set-upstream origin <branch_name>
 
 
 To merge changes in remote and local:
 git pull origin main --allow-unrelated-histories
+
+
+To tracking information for this branch:
+git branch --set-upstream-to=origin/<branch_name>
+
+
+Remove remote files
+git rm --cached <file_path>
