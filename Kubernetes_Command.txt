@@ -1,0 +1,20 @@
+// get pod
+kubectl get pod
+
+// get deployments
+kubectl get deployments
+
+// create deployment 
+kubectl create deployment <deployment-name> --image=<image name>
+
+// get sevrice
+kubectl get services
+
+// get replica set
+kubectl get replicaset
+
+// editing deployment
+kubectl edit deployment <deployment-name>
+
+
+

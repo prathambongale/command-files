@@ -44,10 +44,12 @@ git branch
 
 Switch branch:
 git switch <branch_name>
+git checkout <branch_name>
 
 
 Deleting local branch:
 git branch -d <branch_name>
+
 
 To create branch on remote:
 git push --set-upstream origin <branch_name>
@@ -61,5 +63,9 @@ To tracking information for this branch:
 git branch --set-upstream-to=origin/<branch_name>
 
 
-Remove remote files
+Remove remote files:
 git rm --cached <file_path>
+
+
+Merge branch:
+git merge <branch_name_that_you_want_to_merge_in_current_branch>

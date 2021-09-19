@@ -24,3 +24,10 @@ docker rmi <image_run>
 
 
 docker run -p 27017:27017 --name mongo-one -v /home/prathambongale/mongodb-volume/data/db:/data/db -d mongo:bionic
+
+docker run -it --name localpostgres -p 5432:5432 --user postgres -e POSTGRES_PASSWORD=password -e PGDATA=/var/lib/postgresql/data/pgdata -v C:\Users\prath\OneDrive\Documents\Prathamesh\Programming\database\postgres:/var/lib/postgresql/data -d postgres
+
+docker run -it --name localpostgres -p 5432:5432 --user postgres -e POSTGRES_PASSWORD=password -e PGDATA=/var/lib/postgresql/data/pgdata -v /mnt/c/Users/prath/OneDrive/Documents/Prathamesh/Programming/database/postgres:/var/lib/postgresql/data -d postgres
+
+minikube start
+minikube dashboard
