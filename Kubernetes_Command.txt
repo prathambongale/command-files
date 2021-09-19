@@ -16,5 +16,33 @@ kubectl get replicaset
 // editing deployment
 kubectl edit deployment <deployment-name>
 
+// get pod logs
+kubectl logs <pod-name>
+
+// terminal of application container
+kubectl exec -it <pod-name> -- bin/bash
+
+// delete deployment
+kubectl delete deployment <deployment-name>
+
+// applying configuration file
+kubectl apply -f config-file.yaml // here f stands for file
 
 
+// check if the service has write pods
+kubectl describe service <sevrice-name>
+
+// get more info on pods
+ kubectl get pod -o wide  // here o is for output
+ 
+ 
+// to get updated deployment file
+kubectl get deployment <deployment-name> -o yaml // this file will be store inside etcd
+
+// to store it in a file
+kubectl get deployment [deployment-name] -o yaml  > [file-name.yaml]
+
+
+//deleting configuration deployment and service - this will delete deployment and service from kubernetes orchestration
+kubectl delete -f [deployment-file.yaml]
+kubectl delete -f [service-file.yaml]
