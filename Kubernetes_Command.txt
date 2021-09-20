@@ -46,3 +46,8 @@ kubectl get deployment [deployment-name] -o yaml  > [file-name.yaml]
 //deleting configuration deployment and service - this will delete deployment and service from kubernetes orchestration
 kubectl delete -f [deployment-file.yaml]
 kubectl delete -f [service-file.yaml]
+
+
+// get all components for one application
+kubectl get all | grep [app-name]
+
