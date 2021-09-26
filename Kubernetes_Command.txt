@@ -51,3 +51,10 @@ kubectl delete -f [service-file.yaml]
 // get all components for one application
 kubectl get all | grep [app-name]
 
+
+// starting ingress in minikube
+minikube addons enable ingress
+
+
+// getting pod in a name-space
+kubectl get pod -n [name-space]
