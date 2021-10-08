@@ -58,3 +58,7 @@ minikube addons enable ingress
 
 // getting pod in a name-space
 kubectl get pod -n [name-space]
+
+// create using file
+kubectl create -f [file-name].yml
+

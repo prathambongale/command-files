@@ -31,3 +31,7 @@ docker run -it --name localpostgres -p 5432:5432 --user postgres -e POSTGRES_PAS
 
 minikube start
 minikube dashboard
+
+Interactive shell:
+docker exec -it [container-name] /bin/bash
+
